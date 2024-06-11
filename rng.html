@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicerolls</title>
+    <style>
+         #hundredButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #twentyButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #tenButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #eightButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #sixButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #fourButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #threeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dicerolls</h1>
+    <p><button id="hundredButton">1d100</button></p>
+    <div id="hyaku"></div>
+    <p><button id="twentyButton">1d20</button></p>
+     <div id="nijuu"></div>
+    <p><button id="tenButton">1d10</button></p>
+     <div id="juu"></div>
+    <p><button id="eightButton">1d8</button></p>
+     <div id="hachi"></div>
+    <p><button id="sixButton">1d6</button></p>
+     <div id="roku"></div>
+    <p><button id="fourButton">1d4</button></p>
+     <div id="yon"></div>
+    <p><button id="threeButton">1d3</button></p>
+     <div id="san"></div>
+    <script>
+        function hundreth() {
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("hyaku").innerText = "1D100: " + randomNumber;
+        }
+        function twentieth() {
+            var randomNumber = Math.floor(Math.random() * 20) + 1;
+            document.getElementById("nijuu").innerText = "1D20: " + randomNumber;
+        }
+        function tenth() {
+            var randomNumber = Math.floor(Math.random() * 10) + 1;
+            document.getElementById("juu").innerText = "1D10: " + randomNumber;
+        }
+        function eighth() {
+            var randomNumber = Math.floor(Math.random() * 8) + 1;
+            document.getElementById("hachi").innerText = "1D8: " + randomNumber;
+        }
+        function sixth() {
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("roku").innerText = "1D6: " + randomNumber;
+        }
+        function fourth() {
+            var randomNumber = Math.floor(Math.random() *  4) + 1;
+            document.getElementById("yon").innerText = "1D4: " + randomNumber;
+        }
+        function third() {
+            var randomNumber = Math.floor(Math.random() * 3) + 1;
+            document.getElementById("san").innerText = "1D3: " + randomNumber;
+        }
+
+        
+        document.getElementById("hundredButton").onclick = hundreth;
+        document.getElementById("twentyButton").onclick = twentieth;
+        document.getElementById("tenButton").onclick = tenth;
+        document.getElementById("eightButton").onclick = eighth;
+        document.getElementById("sixButton").onclick = sixth;
+        document.getElementById("fourButton").onclick = fourth;
+        document.getElementById("threeButton").onclick = third;
+
+        
+    </script>
+</body>
+</html>
